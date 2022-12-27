@@ -1,0 +1,503 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/*google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,400&family=Ubuntu:wght@400;500;700&display=swap');
+
+/*basic css*/
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Ubuntu', sans-serif;
+	text-transform: capitalize;
+}
+img{
+	max-width: 100%;
+}
+ul{
+	list-style: none;
+}
+ul a{
+	text-decoration: none;
+}
+.pgbay-sec-tittle{
+	text-align: center;
+}
+.pgbay-sec-tittle span{
+	color: #dd3d3d;
+	position: relative;
+}
+.pgbay-sec-tittle span::after{
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: -5px;
+	left: 0;
+	background-color: #dd3d3d;
+}
+.row{
+	margin: 0;
+}
+/*header area*/
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 2;
+	padding: 20px 0 0;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.pgbay-main-menu ul{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+}
+.pgbay-main-menu ul li a{
+	padding: 10px;
+	text-transform: uppercase;
+	font-size: 15px;
+	color: #fff;
+	position: relative;
+	-webkit-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s;
+}
+.pgbay-main-menu ul li a::after{
+	content: "";
+	display: block;
+	width: 0;
+	height: 3px;
+	background:#dd3d3d;
+	position: absolute;
+	bottom: -5px;
+	-webkit-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s
+}
+.pgbay-main-menu ul li a:hover{
+	color: #dd3d3d;
+}
+.pgbay-main-menu ul li a:hover::after{
+	width: 100%;
+}
+.pgbay-menu-icon{
+	text-align: right;
+	color: #fff;
+	font-size: 25px;
+}
+.pgbay-menu-icon i{
+	display: none;
+}
+/*hero css*/
+.pgbay-hero{
+	width: 100%;
+	padding: 320px 0;
+	background-image: url("images/cover.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+}
+.pgbay-hero-overlay{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	background-color: rgba(83, 38, 187,.92);
+	background-attachment: fixed;
+}
+.pgbay-hero-text{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	    -ms-transform: translate(-50%,-50%);
+	        transform: translate(-50%,-50%);
+	color: #fff;
+	text-align: center;
+}
+.pgbay-hero-text button{
+	background-color: transparent;
+	color: #dd3d3d;
+	padding: 10px 60px;
+	border: 2px solid #dd3d3d;
+	border-radius: 22px;
+	-webkit-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s;
+}
+.pgbay-hero-text button:hover{
+	background-color: #dd3d3d;
+	color: #fff;
+}
+/*about css*/
+.pgbay-about{
+	padding: 40px 0;
+}
+.pgbay-about-body{
+	padding-top: 15px;
+}
+.pgbay-about img{
+	border-radius: 50%;
+	border: 5px solid #dd3d3d;
+}
+.pgbay-about-text button{
+	border: 0;
+	border-radius: 8px;
+	padding: 10px 20px;
+	background-color: #dd3d3d;
+	-webkit-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s;
+}
+.pgbay-about-text button:hover{
+	border: 0;
+	border-radius: 22px;
+	padding: 10px 20px;
+	background-color: #dd2d2d;
+}
+/*service css*/
+.pgbay-service{
+	padding: 40px 0;
+	text-align: center;
+	background-color: #f0f8fa;
+}
+.pgbay-service-contant{
+	padding: 40px 0;
+}
+.pgbay-service i{
+	font-size: 50px;
+	text-align: center;
+	color: #dd3d3d;
+}
+/*tutorials area*/
+.pgbay-tutorials{
+	padding: 40px 0;
+}
+.pgbay-video{
+	background: url('images/thumbnail.jpg');
+	background-size: cover;
+	background-position: center;
+	padding: 275px 0;
+	text-align: center;
+}
+
+.pgbay-video a{
+	color: #fff;
+	font-size: 50px;
+}
+/* reveiws area */
+.pgbay-reveiws{
+	padding: 40px 0;
+	-webkit-box-shadow: inset;
+	        box-shadow: inset;
+}
+.pgbay-reveiws .pgbay-sec-tittle{
+	padding: 20px 0 40px;
+}
+.pgbay-reveiws .carousel-indicators{
+	bottom: -50px;
+}
+.pgbay-reveiws .carousel-indicators button{
+	width: 15px !important;
+	height: 15px !important;
+	background-color: #414141 !important;
+	border-radius: 50% !important;
+}
+.pgbay-client-image img{
+	border-radius: 50%;
+}
+.pgbay-rattings i{
+	color: rgb(255, 166, 0);
+}
+/*subscribe css*/
+.pgbay-subscrie{
+	background-color: #3f247d;
+	color: #fff;
+	padding: 40px 0 60px;
+}
+.pgbay-subscrie .pgbay-sec-tittle{
+	padding: 40px 0 0;
+	width: 60%;
+	margin: auto;
+
+}
+.pgbay-subscrie-form{
+	padding: 20px 0;
+	width: 60%;
+	margin: auto;
+}
+.pgbay-subscrie-form input{
+	background-color: transparent;
+	outline: none;
+	border: 1px solid #000;
+	height: 40px;
+	color: #fff;
+	text-transform: capitalize;
+}
+.pgbay-subscrie-form input::-webkit-input-placeholder{
+	color: #fff;
+	text-transform: capitalize;
+}
+.pgbay-subscrie-form input::-moz-placeholder{
+	color: #fff;
+	text-transform: capitalize;
+}
+.pgbay-subscrie-form input:-ms-input-placeholder{
+	color: #fff;
+	text-transform: capitalize;
+}
+.pgbay-subscrie-form input::-ms-input-placeholder{
+	color: #fff;
+	text-transform: capitalize;
+}
+.pgbay-subscrie-form input::placeholder{
+	color: #fff;
+	text-transform: capitalize;
+}
+.pgbay-subscrie-form input:nth-child(1){
+	width: 80%;
+	padding: 0 20px;
+	color: #fff;
+	border-right-width: 0;
+}
+.pgbay-subscrie-form input:nth-child(2){
+	width: 20%;
+}
+/*team css*/
+.pgbay-team{
+	text-align: center;
+	padding: 30px ;
+}
+.pgbay-team-single{
+	position: relative;
+}
+.pgbay-team-social{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	    -ms-transform: translate(-50%,-50%);
+	        transform: translate(-50%,-50%);
+	opacity: 0;
+	-webkit-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s;
+	width: 100%;
+}
+.pgbay-team-social ul{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack:center;
+	    -ms-flex-pack:center;
+	        justify-content:center;
+}
+.pgbay-team-social ul li a i{
+	display: inline-block;
+	color: rgb(0, 0, 0);
+	padding-right: 40px;
+	font-size: 20px;
+}
+.pgbay-team-social ul li a i:hover{
+	display: inline-block;
+	color: rgb(49, 104, 255);
+	padding-right: 40px;
+	font-size: 20px;
+}
+.pgbay-team-person-tittle{
+	background-color: #f0f8fa; 
+	padding: 20px;
+}
+.pgbay-team-person-tittle h3{
+	font-size: 20px;
+}
+.pgbay-team-person-tittle h5{
+	font-size: 15px;
+}
+.pgbay-team-single:hover{
+	cursor: pointer;
+}
+.pgbay-team-single:hover .pgbay-team-social{
+	opacity: 1;
+	cursor: pointer;
+}
+.pgbay-team-single:hover .pgbay-team-img{
+	opacity: .5;
+}
+.pgbay-team-single:hover .pgbay-team-person-tittle{
+	background-color: transparent;
+}
+/* fetures css */
+.pgbay-fetures{
+	background-color: #fffcfc;
+	padding: 20px 0;
+}
+.pgbay-fetures-icon i{
+	color: #dd3d3d;
+	font-size: 100px;
+	text-align: right;
+}
+.pgbay-fetures .col-sm-6{
+	padding: 30px 0;
+}
+/* pricing css */
+.pgbay-pricing-single{
+	height: 400px;
+	position: relative;
+	background-color: #fcfbfb;
+	border-radius: 22px;
+	margin: 10px 0 20px;
+	-webkit-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s;
+	cursor: pointer;
+}
+.pgbay-pricing-price{
+	text-align: center;
+	border-bottom: 2px solid #dd3d3d;
+}
+.pgbay-pricing-price  h4{
+	background-color: #f1f0f0;
+	border-radius: 22px;
+}
+.pgbay-pricing-fetures{
+	margin: 40px 0 0;
+}
+.pgbay-pricing-fetures ul{
+	padding: 20px 0 0;
+	text-align: center;
+}
+.pgbay-pricing-fetures ul li{
+	font-size: 20px;
+}
+.pgbay-pricing-fetures button{
+	border: 0;
+	padding: 10px 0;
+	background-color: #3f247d;
+	width: 100%;
+	border-radius: 22px;
+	position: absolute;
+	bottom: 40px;
+	-webkit-transform: .5s;
+	    -ms-transform: .5s;
+	        transform: .5s;
+}
+.pgbay-pricing-single:hover{
+	-webkit-box-shadow: 10px 10px 10px 10px gray;
+	        box-shadow: 10px 10px 10px 10px gray;
+	background-color: #fff;
+}
+.pgbay-pricing-fetures button:hover{
+	background-color: transparent;
+	border: 1px solid #3f247d;
+}
+/* contract css */
+.pgbay-contract{
+	background: url("images/contractbg.jpg");
+	background-size: cover;
+	padding: 300px 0 300px;
+	position: relative;
+}
+.pgbay-contract form{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	    -ms-transform: translate(-50%,-50%);
+	        transform: translate(-50%,-50%);
+}
+.pgbay-contract-overlay{
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-color: rgba(61, 24, 146, 0.959);
+}
+.pgbay-contract input,.pgbay-contract textarea{
+	background-color: transparent;
+}
+.pgbay-contract-row{
+	width:100%;
+}
+.pgbay-contract-row input,.pgbay-contract-row textarea{
+	width: 100%;
+	margin: 20px 0;
+	outline: none;
+	border: 2px solid #fff;
+	resize: none;
+	border-radius: 10px;
+	padding: 5px 25px;
+}
+.pgbay-contract-row input::-webkit-input-placeholder, .pgbay-contract textarea::-webkit-input-placeholder{
+	color: #fff;
+}
+.pgbay-contract-row input::-moz-placeholder, .pgbay-contract textarea::-moz-placeholder{
+	color: #fff;
+}
+.pgbay-contract-row input:-ms-input-placeholder, .pgbay-contract textarea:-ms-input-placeholder{
+	color: #fff;
+}
+.pgbay-contract-row input::-ms-input-placeholder, .pgbay-contract textarea::-ms-input-placeholder{
+	color: #fff;
+}
+.pgbay-contract-row input::placeholder,.pgbay-contract textarea::placeholder{
+	color: #fff;
+}
+.pgbay-contract form button{
+	width: 100%;
+	padding: 10px;
+	background-color: transparent;
+	-webkit-transition: .5s;
+	-o-transition: .5s;
+	transition: .5s;
+	border: 2px solid #fff;
+	border-radius: 22px;
+	font-size: 20px;
+}
+.pgbay-contract form button i{
+	font-size: 20px;
+}
+.pgbay-contract form button:hover{
+	background-color: #dd3d3d;
+}
+/* footer css */
+footer{
+	background-color: #fcfbfb;
+	text-align: center;
+	font-size: 20px;
+	padding: 40px 0;
+}.example {
+    display: -ms-grid;
+    display: grid;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+    background: -o-linear-gradient(top, white, black);
+    background: linear-gradient(to bottom, white, black);
+}

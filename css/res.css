@@ -1,0 +1,86 @@
+@media (max-width: 991px){
+	.pgbay-main-menu{
+		position: absolute;
+		background-color: #dd3d3d;
+		width: 100%;
+		top: 100%;
+		left: 0;
+		z-index: 3;
+		display: none;
+	}
+	.pgbay-main-menu ul{
+		display: block;
+		padding: 0;
+	}
+	.pgbay-main-menu ul li{
+		border-bottom: 1px solid #fff;
+	}
+	.pgbay-main-menu ul li a{
+		padding: 10px;
+		display: inline-block;
+	}
+	.pgbay-menu-icon i{
+		display: block;
+	}
+	.pgbay-menu-icon i.fa-times{
+		display: none;
+	}
+	.pgbay-about-body img{
+		margin: 30px auto;
+	}
+	.pgbay-service .row{
+		padding: 0;
+	}
+	.pgbay-subscrie-form input:nth-child(1){
+		width: 100%;
+		border-right:  1px solid black;
+	}
+	.pgbay-subscrie-form input:nth-child(2){
+		width: 100%;
+		margin: 10px auto;
+		border-radius: 22px;
+		background-color: #dd3d3d;
+	}
+	.pgbay-tutorials-thumbnail{
+		width: 60%;
+		height: 200px;
+	}
+	.pgbay-video{
+		padding: 200px;
+	}
+	.pgbay-contract-row input::-webkit-input-placeholder, .pgbay-contract textarea::-webkit-input-placeholder{
+		font-size: 15px;
+	}
+	.pgbay-contract-row input::-moz-placeholder, .pgbay-contract textarea::-moz-placeholder{
+		font-size: 15px;
+	}
+	.pgbay-contract-row input:-ms-input-placeholder, .pgbay-contract textarea:-ms-input-placeholder{
+		font-size: 15px;
+	}
+	.pgbay-contract-row input::-ms-input-placeholder, .pgbay-contract textarea::-ms-input-placeholder{
+		font-size: 15px;
+	}
+	.pgbay-contract-row input::placeholder,.pgbay-contract textarea::placeholder{
+		font-size: 15px;
+	}
+}
+@media (max-width:576px) {
+	.pgbay-video{
+		padding: 100px;
+	}
+	.pgbay-contract-row input::-webkit-input-placeholder, .pgbay-contract textarea::-webkit-input-placeholder{
+		font-size: 12px;
+	}
+	.pgbay-contract-row input::-moz-placeholder, .pgbay-contract textarea::-moz-placeholder{
+		font-size: 12px;
+	}
+	.pgbay-contract-row input:-ms-input-placeholder, .pgbay-contract textarea:-ms-input-placeholder{
+		font-size: 12px;
+	}
+	.pgbay-contract-row input::-ms-input-placeholder, .pgbay-contract textarea::-ms-input-placeholder{
+		font-size: 12px;
+	}
+	.pgbay-contract-row input::placeholder,.pgbay-contract textarea::placeholder{
+		font-size: 12px;
+	}
+}
